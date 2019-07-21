@@ -1,21 +1,3 @@
-# lodash-source-learn
- lodash-source-learn
-
-# “Array” Methods
-
-``` js
-_.chunk(array, [size=1])
-
-chunk(array, [size=1])
-```
-
-Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
-
-创建一个元素数组，将元素分成大小的长度。如果数组不能均匀分割，则最终的块将是剩余的元素。
-
-## source
-
-```js
 function chunk (array, size)  {
   // 获取size, 如果小于0 取值为0
   size = Math.max(size, 0)
@@ -69,14 +51,3 @@ const resChunkLite3 = chunkLite([1,2,3,4,5,6,7], 4)
 console.log(resChunkLite3);
 const resChunkLite4 = chunkLite([1,2,3,4,5,6,7], 5)
 console.log(resChunkLite4);
-
-// [ [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ] ]
-// [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ], [ 7 ] ]
-// [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7 ] ]
-// [ [ 1, 2, 3, 4 ], [ 5, 6, 7 ] ]
-// [ [ 1, 2, 3, 4, 5 ], [ 6, 7 ] ]
-
-// [Done] exited with code=0 in 0.093 seconds
-```
-
-
