@@ -1,0 +1,19 @@
+{
+  "name": "lodash-source",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xiaotiandada/lodash.git",
+  "author": "xiaotian <952822399@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --require babel-register --bail"
+  },
+  "dependencies": {
+    "lodash": "4.17.15"
+  },
+  "devDependencies": {
+    "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
+    "mocha": "8.0.1"
+  }
+}
